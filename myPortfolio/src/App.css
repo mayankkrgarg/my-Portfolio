@@ -1,42 +1,153 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  background: rgb(8, 8, 8);
+  width: 100%;
+  height: 100vh;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+li.navbarTitle {
+  font-weight: 500;
 }
 
-@keyframes logo-spin {
-  from {
+ul.navbarList {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+.mainContent {
+  color: white;
+  margin: 35px 15%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+.clsAboutSection {
+  color: white;
+  margin: 20px 15%;
+  font-size: 16px;
+}
+
+.aboutHeader {
+  font-weight: 500;
+  font-size: 23px;
+  margin-block: 8px;
+}
+
+.clsAboutInnerHeader {
+  font-size: 18px;
+  font-weight: 500;
+  margin-block: 10px;
+}
+
+img.clsMyImage {
+  width: 200px;
+  border-radius: 50%;
+  border: 8px solid #646cff;
+}
+
+.clsMyName {
+  font-size: 70px;
+  font-weight: 500;
+}
+
+.clsMySummary {
+  font-size: 25px;
+}
+
+span.clsWavingHand {
+  transform-origin: bottom right;
+  display: inline-block;
+  animation-name: handwave;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+
+
+
+@keyframes handwave {
+
+  0% {
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+
+  3% {
+    transform: rotate(7deg);
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  6% {
+    transform: rotate(0deg);
   }
-}
 
-.card {
-  padding: 2em;
-}
+  9% {
+    transform: rotate(-7deg);
+  }
 
-.read-the-docs {
-  color: #888;
+  12% {
+    transform: rotate(0deg);
+  }
+
+  15% {
+    transform: rotate(7deg);
+  }
+
+  18% {
+    transform: rotate(0deg);
+  }
+
+  21% {
+    transform: rotate(-7deg);
+  }
+
+  24% {
+    transform: rotate(0deg);
+  }
+
+  27% {
+    transform: rotate(7deg);
+  }
+
+  30% {
+    transform: rotate(0deg);
+  }
+
+  33% {
+    transform: rotate(-7deg);
+  }
+
+  36% {
+    transform: rotate(0deg);
+  }
+
+  39% {
+    transform: rotate(7deg);
+  }
+
+  42% {
+    transform: rotate(0deg);
+  }
+
+  45% {
+    transform: rotate(-7deg);
+  }
+
+  48% {
+    transform: rotate(0deg);
+  }
+
+  51% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+
 }
