@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import { Outlet } from 'react-router-dom';
 import myPhoto from '../assets/myPhoto.jpg'
+import { skills } from "../data/skillsData";
 
 const Homepage = (props) => {
     return (
@@ -35,8 +36,8 @@ const Homepage = (props) => {
 
                     Application performance improvements through caching and smart optimization techniques
 
-                    <div className="clsAboutInnerHeader">🛠️ Tech Stack</div>
-                    .NET Core | React | SQL Server | MVC | Entity Framework Core | Web API | JavaScript | TypeScript | LINQ | Bootstrap
+                    <div className="clsAboutInnerHeader">🛠️ Skills</div>
+                    {skills.map((element,index)=>{return <div key={index} className="clsSkillsName">{`${element}`}</div>})}
                 </div>
             </div>
         </>

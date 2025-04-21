@@ -9,13 +9,13 @@ const Navbar = (props) =>{
         <header className="navbarHeader">
         <nav className="navbarTag">
             <ul className="navbarList">
-                <li className="navbarTitle">Portfolio</li>
-                {navigationItems.map((item)=>{
-                    return (<>
-                    <li className="navbarListItem">
+                <li key={0} className="navbarTitle">Portfolio</li>
+                {navigationItems.map((item, index)=>{
+                    return (
+                    <li key={index+1} className="navbarListItem">
                         <Link to ={item.path}>{item.title}</Link>
                     </li>
-                    </>)
+                    )
                 })}
             </ul>
         </nav>

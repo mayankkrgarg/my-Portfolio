@@ -1,7 +1,8 @@
 #root {
   background: rgb(8, 8, 8);
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  opacity: 0.95;
 }
 
 li.navbarTitle {
@@ -13,6 +14,17 @@ ul.navbarList {
   display: flex;
   gap: 40px;
   color: white;
+}
+.clsSkillsName {
+  display: inline-block;
+  margin: 5px 10px;
+  background: #646cff;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+.clsSkillsName:hover {
+  opacity: 0.7;
 }
 
 a {
@@ -70,6 +82,113 @@ span.clsWavingHand {
 
 }
 
+.clsExperiencePageOuterDiv {
+  color: white;
+  margin: 40px 20%;
+}
+
+.clsExperienceHeading, .clsEducationHeading {
+  font-size: 22px;
+  font-weight: 500;
+  margin-block: 10px;
+}
+
+img.clsExperienceItemImg {
+  height: 55px;
+  border-radius: 50%;
+}
+
+.clsExperienceItemOuterDiv {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-block: 25px;
+}
+
+.clsExperienceItemHeadersOuterDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clsExperienceItemContent {
+  width: 75%;
+}
+
+.clsExperienceCompanyName {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.clsExperienceItemDuration {
+  font-weight: normal;
+  font-size: 16px;
+  color: lightgrey;
+}
+
+.clsExperienceDesignation {
+  font-size: 14px;
+  color: lightgrey;
+}
+
+img.clsEducationItemImg {
+  height: 55px;
+  border-radius: 50%;
+}
+
+.clsEducationItemOuterDiv {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-block: 25px;
+}
+
+.clsEducationItemHeadersOuterDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clsEducationItemContent {
+  width: 75%;
+}
+
+.clsEducationCompanyName {
+  font-weight: 500;
+  font-size: 16px;
+}
+.clsEducationCollegeName {
+  font-size: 14px;
+  color: lightgrey;
+}
+.clsEducationDesignation {
+  font-size: 14px;
+  color: lightgrey;
+}
+
+.clsEducationItemDuration {
+  font-size: 16px;
+  font-weight: normal;
+  color: lightgrey;
+}
+.clsExperienceItemDescription{
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+}
+.clsExperienceItemDescription.clsExperienceItemDescriptionOpen{
+  max-height: 300px;
+}
+.clsExperienceNameAndDesignationOuterDiv{
+  cursor: pointer;
+}
+img.clsExperienceArrowImg.clsExperienceOpen {
+  transform: rotateZ(90deg);
+}
+img.clsExperienceArrowImg {
+  height: 15px;
+  vertical-align: middle;
+  transition: 0.4s ease-in-out;
+  margin-inline: 5px;
+}
 
 
 @keyframes handwave {
