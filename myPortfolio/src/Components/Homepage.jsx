@@ -3,6 +3,10 @@ import Navbar from "./Navbar";
 import { Outlet } from 'react-router-dom';
 import myPhoto from '../assets/myPhoto.jpg'
 import { skills } from "../data/skillsData";
+import github from "../assets/github.svg"
+import linkedin from "../assets/linkedin.svg"
+import downloadResume from "../assets/download.svg"
+import mail from "../assets/gmailLogo.jpg"
 
 const Homepage = (props) => {
     return (
@@ -13,7 +17,13 @@ const Homepage = (props) => {
                         Hi, I'm Mayank <span className="clsWavingHand">👋</span>
                     </div>
                     <div className="clsMySummary">
-                        Full-Stack Developer | Expertise in React JS & .NET | Building Scalable, Responsive, and High-Performance Web Applications
+                        Full-Stack Developer | Expertise in React JS & .NET | Building Scalable, Responsive, and High-Performance Web Applications with ADA compliance
+                    </div>
+                    <div className="clsMyLinks">
+                        <a href="https://www.linkedin.com/in/mayankkumargarg/" target="_blank"><img src={linkedin} className="clsLinkedIn" title="LinkedIn" alt="LinkedIn"/></a>
+                        <a href="https://github.com/mayankkrgarg" target="_blank"><img src={github} className="clsGitHub" title="GitHub" alt="GitHub"/></a>
+                        <a href="mailto:mayankkumargarg11@gmail.com" target="_blank"><img src={mail} className="clsMail" title="Mail" alt="Mail"/></a>
+                        <a href="https://tinyurl.com/yswfwmmx" target="_blank"><div className="clsDownloadResumeDiv" title="Download Resume">Download Resume <img src={downloadResume} className="clsDownloadImg" alt="Download"/></div></a>
                     </div>
                 </div>
                 <img src={myPhoto} className="clsMyImage" />

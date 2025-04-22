@@ -1,5 +1,5 @@
 #root {
-  background: rgb(8, 8, 8);
+  
   width: 100%;
   min-height: 100vh;
   opacity: 0.95;
@@ -13,34 +13,36 @@ ul.navbarList {
   list-style-type: none;
   display: flex;
   gap: 40px;
-  color: white;
+  color: black;
 }
 .clsSkillsName {
   display: inline-block;
   margin: 5px 10px;
-  background: #646cff;
+  color: white;
+  background: black;
+  opacity: 0.9;
   cursor: pointer;
   padding: 5px 10px;
   border-radius: 8px;
 }
 .clsSkillsName:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 a {
-  color: white;
+  color: black;
 }
 
 .mainContent {
-  color: white;
-  margin: 35px 15%;
+  color: black;
+  margin: 25px 15%;
   display: flex;
   justify-content: space-between;
   gap: 5%;
 }
 
 .clsAboutSection {
-  color: white;
+  color: black;
   margin: 20px 15%;
   font-size: 16px;
 }
@@ -58,18 +60,24 @@ a {
 }
 
 img.clsMyImage {
-  width: 200px;
+  height: 180px;
   border-radius: 50%;
   border: 8px solid #646cff;
 }
 
+img.clsMail {
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .clsMyName {
-  font-size: 70px;
+  font-size: 65px;
   font-weight: 500;
 }
 
 .clsMySummary {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 span.clsWavingHand {
@@ -83,7 +91,7 @@ span.clsWavingHand {
 }
 
 .clsExperiencePageOuterDiv {
-  color: white;
+  color: black;
   margin: 40px 20%;
 }
 
@@ -122,12 +130,12 @@ img.clsExperienceItemImg {
 .clsExperienceItemDuration {
   font-weight: normal;
   font-size: 16px;
-  color: lightgrey;
+  color: grey;
 }
 
 .clsExperienceDesignation {
   font-size: 14px;
-  color: lightgrey;
+  color: grey;
 }
 
 img.clsEducationItemImg {
@@ -157,17 +165,17 @@ img.clsEducationItemImg {
 }
 .clsEducationCollegeName {
   font-size: 14px;
-  color: lightgrey;
+  color: grey;
 }
 .clsEducationDesignation {
   font-size: 14px;
-  color: lightgrey;
+  color: grey;
 }
 
 .clsEducationItemDuration {
   font-size: 16px;
   font-weight: normal;
-  color: lightgrey;
+  color: grey;
 }
 .clsExperienceItemDescription{
   max-height: 0px;
@@ -188,6 +196,44 @@ img.clsExperienceArrowImg {
   vertical-align: middle;
   transition: 0.4s ease-in-out;
   margin-inline: 5px;
+}
+
+img.clsLinkedIn {
+  height: 35px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.clsMyLinks {
+  display: flex;
+  gap: 20px;
+  margin-block: 10px;
+  align-items: center;
+}
+
+img.clsGitHub {
+  height: 35px;
+  cursor: pointer;
+}
+
+.clsDownloadResumeDiv {
+  border-radius: 25px;
+  display: flex;
+  border: 2px solid #1e3050;
+  align-items: center;
+  padding-inline: 10px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.clsDownloadResumeDiv:hover{
+  border-color: #646cff;
+  background: #646cff;
+  color: white;
+}
+
+img.clsDownloadImg {
+  height: 25px;
 }
 
 
