@@ -236,6 +236,75 @@ img.clsDownloadImg {
   height: 25px;
 }
 
+.clsProjectsHeading {
+  font-size: 22px;
+  font-weight: 500;
+  margin-block: 10px;
+}
+
+.clsProjectsPageOuterDiv {
+  margin: 40px 15%;
+}
+
+.clsProjectsData {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.clsProjectsItemOuterDiv {
+  width: 25%;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
+            -2px -2px 5px rgba(255, 255, 255, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.clsProjectsItemOuterDiv:hover {
+  transform: translateY(-3px);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4),
+            -3px -3px 8px rgba(255, 255, 255, 0.2);
+}
+
+img.clsProjectItemImg {
+  object-fit: contain;
+  height: 135px;
+}
+
+
+
+.clsProjectsItemNameDiv {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-block: 10px;
+}
+
+.clsProjectsItemDescriptionDiv {
+  text-align: left;
+  font-size: 13px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1em;
+  height: 50px;
+  max-height: calc(1em * 3);
+}
+.clsProjectsItemDescriptionReadMore {
+  text-align: right;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #d40000;
+}
 
 @keyframes handwave {
 

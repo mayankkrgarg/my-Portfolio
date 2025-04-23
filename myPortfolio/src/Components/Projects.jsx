@@ -5,8 +5,8 @@ import {projectsJson} from '../data/ProjectsData'
 
 const Projects = (props) => {
     console.log(projectsJson)
-    const [selectedIDs, setSelectedIDs] = React.useState([])
-    const handleClick = (id) => {
+    const [selectedItem, setSelectedItem] = React.useState({})
+    const handleClick = (item) => {
         console.log(id)
         console.log(selectedIDs.includes(id))
         if (selectedIDs.includes(id)) {
@@ -33,7 +33,16 @@ const Projects = (props) => {
                             return (
                                 <div key={item.id} className="clsProjectsItemOuterDiv">
                                     <div className="clsProjectsItemImgDiv">
+                                        <img src={item.image} alt={item.projectName} title={item.projectName} className="clsProjectItemImg"/>
+                                    </div>
+                                    <div className="clsProjectsItemNameDiv">
                                         {item.projectName}
+                                    </div>
+                                    <div className="clsProjectsItemDescriptionDiv">
+                                        {item.description}
+                                    </div>
+                                    <div className="clsProjectsItemDescriptionReadMore" onClick={(e)=>setSelectedItem(item)}>
+                                        {"Read more..."}
                                     </div>
                                     
                                 </div>
